@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+
+div#goodsListArea {
+	width: 100%;
+/* 	border: 1px solid #000; */
+}
+
+
+/* 게시판 목록의 공통 사항 시작 */
+#goodsListArea .listCol>span {
+	padding: 8px 2px;
+/* 	border: 1px solid #f80; */
+}
+
+#goodsListArea .listCol>span:nth-child(1) {
+	width: 60px;
+}
+#goodsListArea .listCol>span:nth-child(2) {
+	flex: 1;
+}
+#goodsListArea .listCol>span:nth-child(3) {
+	width: 120px;
+}
+#goodsListArea .listCol>span:nth-child(4) {
+	width: 80px;
+}
+#goodsListArea .listCol>span:nth-child(5) {
+	width: 70px;
+}
+#goodsListArea .listCol>span:nth-child(6) {
+	width: 70px;
+}
+/* 게시판 목록의 공통 사항 끝 */
+
+/* 게시판 목록 열제목 시작 */
+#goodsListArea #listHeader {
+	background-color: rgba(0, 136, 255, 0.4);
+}
+#goodsListArea #listHeader>span {
+	font-weight: bold;
+	text-align: center;
+}
+/* 게시판 목록 열제목 끝 */
+
+
+/* 게시판 목록 내용 시작 */
+#goodsListArea .listRow {
+	border-bottom: 1px solid #aaa;
+}
+#goodsListArea .listRow>span:not(:nth-child(2)) {
+	text-align: center;
+}
+#goodsListArea .listRow:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+/* 게시판 목록 내용 끝 */
+
+/* 수정할 상품 번호,가격 내용 시작*/
+#updateArea{
+	border-bottom : 1px solid #aaa;
+}
+#inputA{
+	margin:10px 20px;
+}
+#inputA>input{
+	margin: 0 20px;
+	width: 50px;
+	justify-content : space-around;
+}
+/* 수정할 상품 번호,가격 내용 시작*/
+
+/* 수정하기 버튼 내용 시작 */
+#btn{
+	padding: 10px 150px;
+}
+#btn>button{
+	width: 100px;
+	margin: 0 50px;
+	cursor: pointer;
+}
+/* 수정하기 버튼 내용 끝 */
+
+/* X삭제 내용 시작*/
+#Xbtn{
+	cursor: pointer;
+}
+#Xbtn:hover{
+	background-color : rgba(0,0,0,0.1);
+}
+
+/* X삭제 내용 끝 */
